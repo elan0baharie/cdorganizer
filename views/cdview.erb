@@ -1,0 +1,6 @@
+<h1>All your cds:</h1>
+<ul>
+  <% @cd.each() do |one_cd| %>
+    <li><a href="/cdcataloger/<%= one_cd.id() %>"><%= one_cd.title() %></a></li>
+  <% end %>
+</ul>
